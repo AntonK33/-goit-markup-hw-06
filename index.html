@@ -60,7 +60,7 @@
             <div data-modal class="backdrop is-hidden" >
                 <div class="modal">
                     
-                <p></p>
+                
                 <button data-modal-close class="backdrop-button">
                     <svg class="backdrop-cross">
                     <use href="image/icon-mod.svg#icon-cross"></use>
@@ -73,7 +73,7 @@
                     
                     <label class="form-input-box">
                       Имя
-                        <input type="text" name="username" class="form-input" autofocus required />
+                        <input type="text" minlength="2" maxlength="12   " name="username" class="form-input" autofocus required />
                         
                         <svg class="form-input-icon">
                             <use href="./image/icon-mod.svg#icon-person-black"> </use>
@@ -81,7 +81,7 @@
                     </label>
                     <label class="form-input-box">
                         Телефон
-                        <input type="tel" name="tel"class="form-input" pattern="[0-9]{10}"  title="0666679492" required/>
+                        <input type="tel" name="tel"class="form-input" pattern="[0-9]{10}"  title=" " required/>
                         <svg class="form-input-icon">
                             <use href="./image/icon-mod.svg#icon-phone-black"> </use>
                         </svg>
@@ -502,14 +502,14 @@
             
                 <label class="footer-form-label">
                 <b class="footer-form-text">подпишитесь на рассылку</b>
-                <div class="footer-form-container">
+                <span class="footer-form-container">
                     <input  class="footer-form-input" type="email" name="email" autocomplete="email" placeholder="E-mail" />
-               
+              
                 <button class="footer-button-submit" type="submit">Подписаться<svg class="footer-button-icon">
                     <use href="image/icon-mod.svg#icon-icon-send"></use>
                 </svg>
                 </button>
-               
+                </span>
                 </label>
                 
              </div>
